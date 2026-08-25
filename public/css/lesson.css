@@ -1,0 +1,95 @@
+/* DOROS COPTIC — LESSON VIEWER & YOUTUBE PLAYER */
+
+.lesson-layout {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .lesson-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.lesson-player-container {
+  background: #000000;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-glass);
+}
+
+.lesson-player-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Video Watch Tracking Bar */
+.video-tracker-bar {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.25rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.tracker-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.tracker-text {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+/* Coptic Text Learning Block */
+.coptic-learning-box {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.08), rgba(124, 58, 237, 0.08));
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.coptic-box-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent-gold);
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
+.coptic-content-body {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-primary);
+  white-space: pre-line;
+}
+
+/* Lesson Navigation Footer */
+.lesson-nav-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-glass);
+}

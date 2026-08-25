@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doros Coptic — دروس قبطي | منصة تعليم اللغة القبطية</title>
+  <meta name="description" content="منصة متطورة واحترافية لتعليم اللغة القبطية عبر مناهج تفاعلية، فيديوهات يوتيوب، اختبارات ذكية، وواجبات دراسية.">
+  <meta name="keywords" content="قبطي, لغة قبطية, دروس قبطي, حروف قبطي, coptic lessons, coptic language, coptic alphabet">
+
+  <!-- Favicon Glyph -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%23F59E0B'>ⲁ</text></svg>">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="/css/variables.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/auth.css">
+  <link rel="stylesheet" href="/css/dashboard.css">
+  <link rel="stylesheet" href="/css/course.css">
+  <link rel="stylesheet" href="/css/lesson.css">
+  <link rel="stylesheet" href="/css/exam.css">
+  <link rel="stylesheet" href="/css/coptic.css">
+  <link rel="stylesheet" href="/css/rtl.css">
+</head>
+<body>
+
+  <!-- Subtle Coptic Heritage Background Pattern -->
+  <div class="coptic-pattern-bg"></div>
+
+  <!-- Auth / Setup Viewport (shown when not logged in) -->
+  <div id="auth-viewport-container" style="display: none;"></div>
+
+  <!-- Authenticated Application Shell -->
+  <div id="app-container" style="display: none;">
+    <!-- Mobile Sidebar Backdrop Overlay -->
+    <div class="sidebar-overlay" onclick="window.sidebar.closeMobileSidebar()"></div>
+
+    <!-- Sidebar Navigation -->
+    <aside id="app-sidebar-container" class="app-sidebar"></aside>
+
+    <!-- Main Viewport -->
+    <main class="app-main">
+      <!-- Topbar Header -->
+      <header id="app-topbar-container" class="app-topbar"></header>
+
+      <!-- Dynamic Page Content -->
+      <section id="app-main-content" class="app-content"></section>
+    </main>
+  </div>
+
+  <!-- Floating Virtual Coptic Keyboard Quick Access Button -->
+  <button class="floating-coptic-btn" onclick="window.copticTools.openKeyboard()" title="لوحة المفاتيح القبطية (Coptic Keyboard)">
+    ⲁ
+  </button>
+
+  <!-- Global Toast Notification Container -->
+  <div id="toast-container"></div>
+
+  <!-- Frontend JavaScript Modules -->
+  <script src="/js/i18n.js"></script>
+  <script src="/js/utils.js"></script>
+  <script src="/js/api.js"></script>
+  <script src="/js/state.js"></script>
+  <script src="/js/auth.js"></script>
+  <script src="/js/navbar.js"></script>
+  <script src="/js/sidebar.js"></script>
+  <script src="/js/dashboard.js"></script>
+  <script src="/js/courses.js"></script>
+  <script src="/js/lesson.js"></script>
+  <script src="/js/exams.js"></script>
+  <script src="/js/assignments.js"></script>
+  <script src="/js/coptic-tools.js"></script>
+  <script src="/js/admin/dashboard.js"></script>
+  <script src="/js/admin/users.js"></script>
+  <script src="/js/admin/courses.js"></script>
+  <script src="/js/admin/codes.js"></script>
+  <script src="/js/admin/reports.js"></script>
+  <script src="/js/admin/settings.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

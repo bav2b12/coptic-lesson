@@ -1,0 +1,96 @@
+/* DOROS COPTIC — DESIGN SYSTEM & TOKENS */
+
+:root {
+  /* Core Color Palette */
+  --primary-navy: #0A1128;
+  --primary-dark: #0F1D40;
+  --primary-card: #152452;
+  --primary-blue: #2563EB;
+  --primary-blue-hover: #1D4ED8;
+  --primary-blue-light: #3B82F6;
+  --primary-purple: #7C3AED;
+  --primary-purple-light: #8B5CF6;
+  
+  /* Accent Colors */
+  --accent-gold: #F59E0B;
+  --accent-gold-hover: #D97706;
+  --accent-gold-light: #FEF3C7;
+  --accent-gold-glow: rgba(245, 158, 11, 0.25);
+  
+  --success: #10B981;
+  --success-bg: rgba(16, 185, 129, 0.15);
+  --warning: #F59E0B;
+  --warning-bg: rgba(245, 158, 11, 0.15);
+  --danger: #EF4444;
+  --danger-bg: rgba(239, 68, 68, 0.15);
+  --info: #06B6D4;
+  --info-bg: rgba(6, 182, 212, 0.15);
+  
+  /* Backgrounds & Surfaces (Dark Theme Default for Educational Luxury) */
+  --bg-main: #0B1120;
+  --bg-surface: #131E38;
+  --bg-surface-elevated: #1B2A4E;
+  --bg-card: rgba(19, 30, 56, 0.85);
+  --bg-card-hover: rgba(27, 42, 78, 0.95);
+  --bg-glass: rgba(19, 30, 56, 0.7);
+  --border-glass: rgba(255, 255, 255, 0.08);
+  --border-glass-hover: rgba(245, 158, 11, 0.3);
+  
+  /* Text Colors */
+  --text-primary: #F8FAFC;
+  --text-secondary: #94A3B8;
+  --text-muted: #64748B;
+  --text-gold: #FBBF24;
+  
+  /* Typography */
+  --font-arabic: 'Cairo', 'Tajawal', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-english: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-coptic: 'Noto Sans Coptic', 'Segoe UI Historic', 'Antinoou', 'Coptic Unicode', sans-serif;
+  
+  /* Shadows & Glows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 12px 36px rgba(0, 0, 0, 0.45);
+  --shadow-glow: 0 0 24px rgba(37, 99, 235, 0.3);
+  --shadow-gold: 0 0 20px rgba(245, 158, 11, 0.25);
+  
+  /* Radii */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-full: 9999px;
+  
+  /* Layout Sizing */
+  --sidebar-width: 280px;
+  --sidebar-collapsed-width: 80px;
+  --topbar-height: 72px;
+  --max-content-width: 1380px;
+  
+  /* Transitions */
+  --transition-fast: 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Light Theme Variables */
+[data-theme="light"] {
+  --bg-main: #F1F5F9;
+  --bg-surface: #FFFFFF;
+  --bg-surface-elevated: #F8FAFC;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #F8FAFC;
+  --bg-glass: rgba(255, 255, 255, 0.85);
+  --border-glass: rgba(0, 0, 0, 0.08);
+  --border-glass-hover: rgba(37, 99, 235, 0.4);
+  
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-muted: #94A3B8;
+  --text-gold: #D97706;
+  
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 12px 36px rgba(0, 0, 0, 0.12);
+}

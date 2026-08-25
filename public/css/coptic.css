@@ -1,0 +1,93 @@
+/* DOROS COPTIC — COPTIC VIRTUAL KEYBOARD & ALPHABET TOOLS */
+
+.coptic-keyboard-modal {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 0.5rem;
+  padding: 1rem;
+  background: var(--bg-surface-elevated);
+  border-radius: var(--radius-md);
+  margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+  .coptic-keyboard-modal {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.coptic-key-btn {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-xs);
+  padding: 0.75rem 0.25rem;
+  font-family: var(--font-coptic);
+  font-size: 1.35rem;
+  color: var(--text-gold);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.coptic-key-btn:hover {
+  background: var(--primary-blue);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  border-color: var(--primary-blue-light);
+}
+
+.coptic-key-name {
+  font-family: var(--font-arabic);
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  margin-top: 0.2rem;
+}
+
+.coptic-key-btn:hover .coptic-key-name {
+  color: #FFFFFF;
+}
+
+/* Alphabet Flashcard Grid */
+.alphabet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.alphabet-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  text-align: center;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.alphabet-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent-gold);
+  box-shadow: var(--shadow-gold);
+}
+
+.letter-glyph-large {
+  font-family: var(--font-coptic);
+  font-size: 2.5rem;
+  color: var(--accent-gold);
+  margin-bottom: 0.5rem;
+}
+
+.letter-name-ar {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.letter-sound-desc {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-top: 0.25rem;
+}

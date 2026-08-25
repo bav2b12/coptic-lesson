@@ -1,0 +1,148 @@
+/* DOROS COPTIC — COURSE VIEW & SYLLABUS */
+
+.course-header-banner {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-xl);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.course-header-cover {
+  width: 180px;
+  height: 180px;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-purple));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-coptic);
+  font-size: 5rem;
+  color: var(--accent-gold);
+  overflow: hidden;
+  flex-shrink: 0;
+  box-shadow: var(--shadow-md);
+}
+
+.course-header-details {
+  flex: 1;
+  min-width: 280px;
+}
+
+.course-header-title {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.course-header-desc {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.25rem;
+}
+
+/* Units Accordion */
+.unit-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-lg);
+  margin-bottom: 1.25rem;
+  overflow: hidden;
+  transition: border-color var(--transition-fast);
+}
+
+.unit-card:hover {
+  border-color: rgba(37, 99, 235, 0.4);
+}
+
+.unit-header {
+  padding: 1.25rem 1.5rem;
+  background: var(--bg-surface-elevated);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+}
+
+.unit-title-group {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.unit-index-badge {
+  width: 32px;
+  height: 32px;
+  background: var(--primary-blue);
+  color: #FFFFFF;
+  border-radius: var(--radius-xs);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+
+.unit-title-text {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.unit-items-list {
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.lesson-row-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+.lesson-row-item:hover {
+  background: var(--bg-surface-elevated);
+  border-color: var(--primary-blue);
+  transform: translateX(-4px);
+}
+
+[dir="ltr"] .lesson-row-item:hover {
+  transform: translateX(4px);
+}
+
+.lesson-left-info {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.lesson-icon {
+  font-size: 1.2rem;
+  color: var(--primary-blue-light);
+}
+
+.lesson-title-text {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.lesson-right-status {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}

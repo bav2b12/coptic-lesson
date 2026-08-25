@@ -1,0 +1,160 @@
+/* DOROS COPTIC — EXAM ENGINE & QUIZ RUNNER */
+
+.exam-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.exam-header-bar {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: var(--shadow-sm);
+}
+
+.exam-timer-box {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--accent-gold);
+  background: rgba(245, 158, 11, 0.1);
+  padding: 0.4rem 1rem;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.exam-timer-box.urgent {
+  color: var(--danger);
+  background: var(--danger-bg);
+  border-color: rgba(239, 68, 68, 0.4);
+  animation: pulseGold 1s infinite;
+}
+
+.question-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-xl);
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-md);
+}
+
+.question-number-badge {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--primary-blue-light);
+  margin-bottom: 0.5rem;
+}
+
+.question-title-text {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+.question-coptic-text {
+  font-size: 1.6rem;
+  color: var(--accent-gold);
+  margin-bottom: 1rem;
+  font-family: var(--font-coptic);
+}
+
+/* Options Grid */
+.options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.option-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: var(--bg-surface-elevated);
+  border: 2px solid var(--border-glass);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  user-select: none;
+}
+
+.option-item:hover {
+  background: rgba(37, 99, 235, 0.1);
+  border-color: rgba(37, 99, 235, 0.5);
+}
+
+.option-item.selected {
+  background: rgba(37, 99, 235, 0.2);
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 12px rgba(37, 99, 235, 0.25);
+}
+
+.option-letter-badge {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-xs);
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+}
+
+.option-item.selected .option-letter-badge {
+  background: var(--primary-blue);
+  color: #FFFFFF;
+}
+
+.option-text {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* Result Certificate Card */
+.result-card {
+  background: var(--bg-surface);
+  border: 2px solid var(--border-glass);
+  border-radius: var(--radius-xl);
+  padding: 3rem 2rem;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+}
+
+.result-score-circle {
+  width: 130px;
+  height: 130px;
+  border-radius: var(--radius-full);
+  margin: 0 auto 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 2.2rem;
+  border: 4px solid var(--primary-blue);
+}
+
+.result-card.passed .result-score-circle {
+  border-color: var(--success);
+  color: var(--success);
+  background: var(--success-bg);
+}
+
+.result-card.failed .result-score-circle {
+  border-color: var(--danger);
+  color: var(--danger);
+  background: var(--danger-bg);
+}

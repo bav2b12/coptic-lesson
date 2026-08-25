@@ -1,0 +1,41 @@
+/* DOROS COPTIC — RTL & LTR ADJUSTMENTS */
+
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="ltr"] {
+  text-align: left;
+}
+
+/* Floating helper buttons */
+.floating-coptic-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 80;
+  width: 54px;
+  height: 54px;
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, var(--accent-gold), #D97706);
+  color: #0A1128;
+  font-family: var(--font-coptic);
+  font-size: 1.6rem;
+  font-weight: 900;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0 4px 20px rgba(245, 158, 11, 0.4);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+}
+
+[dir="ltr"] .floating-coptic-btn {
+  right: auto;
+  left: 2rem;
+}
+
+.floating-coptic-btn:hover {
+  transform: scale(1.1) rotate(5deg);
+}
